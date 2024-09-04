@@ -1,0 +1,157 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+body {
+    background: #ECF5F5;
+}
+main {
+    width: 1440px;
+    margin: 0 auto;
+}
+main .introduceTooktak {
+    margin-bottom: 200px;
+}
+main>div {
+    width: 100%;
+}
+main>div>div {
+    width: 1440px;
+    margin: 50px 0;
+}
+main>div .whyTooktakHead ,main>div .introduceTooktakHead {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+main>div>div h3 {
+    height: 170px;
+    background: #FFFFFF;
+    font-size: 40px;
+    padding: 56px 52px;
+    color: #6B7072;
+    font-weight: 500;
+    border-radius: 40px;
+    box-shadow: 1px 8px 1px rgba(0, 0, 0, 0.25);
+    border: 2.5px solid #6B7072;
+}
+main>div>div .whyTootakbody, main>div>div .introduceTooktakbody {
+    background: #FFFFFF;
+    border: 2.5px solid #6B7072;
+    box-shadow: 1px 8px 1px rgba(0, 0, 0, 0.25);
+    padding: 40px 60px;
+}
+main>div .whyTooktak001 .whyTootakbody, main>div .whyTooktak003 .whyTootakbody, main>div .introduceTooktak002 .introduceTooktakbody, main>div .introduceTooktak004 .introduceTooktakbody {
+    border-radius: 90px 90px 0 90px;
+}
+main>div .whyTooktak002 .whyTootakbody, main>div .introduceTooktak001 .introduceTooktakbody, main>div .introduceTooktak003 .introduceTooktakbody {
+    border-radius: 90px 90px 90px 0;
+}
+main>div .introduceTooktak001 .introduceTooktakbody, main>div .introduceTooktak002 .introduceTooktakbody, main>div .introduceTooktak003 .introduceTooktakbody, main>div .introduceTooktak004 .introduceTooktakbody {
+    width: 1030px;
+}
+main>div>div .whyDetail001 .imgBox {
+    display: flex;
+    gap: 40px;
+}
+main>div>div .whyDetail001 .imgBox img {
+    height: 140px;
+}
+main>div>div .whyDetail002 .imgBox img {
+    height: 340px;
+}
+main>div>div .whyDetail003 .imgBox img {
+    height: 270px;
+}
+main>div>div>div>div {
+    display: flex;
+    gap: 72px;
+    margin-top: 28px;
+}
+main>div>div>div .whyDetail001 {
+    display: inline-block;
+}
+main>div>div>div>h4 {
+    font-size: 48px;
+    font-weight: 600;
+    color: #6B7072;
+}
+main>div>div>div>div p {
+    width: 710px;
+    font-size: 28px;
+    font-weight: 500;
+    color: #6B7072;
+}
+main>.introduceTooktak>div>div>div p {
+    width: 100%;
+}
+main .whyTooktak .whyTooktak001 .whyTootakbody .whyDetail001 p {
+    width: 100%;
+    margin-top: 28px;
+}
+main .introduceTooktak {
+    margin-top: 150px;
+}
+
+.whyTooktakHead h3, .introduceTooktakHead h3, .whyTootakbody, .introduceTooktakbody {
+    /* opacity: 0; */
+    transition: all 0.5s;
+}
+.whyTooktak001 {height: 492px;}
+.whyTooktak002 {height: 520px;}
+.whyTooktak003 {height: 510px;}
+.introduceTooktak001{height: 302px;}
+.introduceTooktak002{height: 302px;}
+.introduceTooktak003{height: 342px;}
+.introduceTooktak004{height: 302px; margin-bottom: 400px;}
+
+main .whyTooktak .whyTooktak001, main .whyTooktak .whyTooktak002, main .whyTooktak .whyTooktak003, main .introduceTooktak .introduceTooktak001, main .introduceTooktak .introduceTooktak002, main .introduceTooktak .introduceTooktak003, main .introduceTooktak .introduceTooktak004 {
+    position: relative;
+}
+main .whyTooktak .whyTooktak001 .whyTootakbody,main .whyTooktak .whyTooktak003 .whyTootakbody, main .introduceTooktak .introduceTooktak002 .introduceTooktakbody, main .introduceTooktak .introduceTooktak004 .introduceTooktakbody {
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 0;
+}
+main .whyTooktak .whyTooktak002 .whyTootakbody, main .introduceTooktak .introduceTooktak001 .introduceTooktakbody, main .introduceTooktak .introduceTooktak003 .introduceTooktakbody {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+.slide-in-L {
+    animation: slideInL 0.5s ease;
+    animation-fill-mode: forwards; /* 애니메이션 종료 후 최종 상태 유지 */
+    opacity: 1;
+}
+@keyframes slideInL {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.slide-in-R {
+    animation: slideInR 0.5s ease;
+    animation-fill-mode: forwards; /* 애니메이션 종료 후 최종 상태 유지 */
+    opacity: 1;
+}
+@keyframes slideInR {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

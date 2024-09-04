@@ -1,0 +1,126 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+.body {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 11;
+    width: 100%;
+    height: 100%;
+    background: #ECF5F5;
+    padding-bottom: 96px;
+    box-sizing: content-box;
+}
+.membershipStart {
+    display: none;
+}
+.membershipStart.membershipOn {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-top: 96px;
+}
+.membershipBg {
+    width: 600px;
+    margin: 0 auto;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 36px;
+}
+.membershipWindow {
+    width: 100%;
+    border-radius: 30px;
+    border: 2.5px solid #6B7072;
+    box-shadow: 1px 8px 1px rgba(107, 112, 114, 0.5);
+    background: #fff;
+}
+.membershipWindow form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    padding: 48px 0;
+}
+.membershipWindow form>p {
+    font-family: "Noto Sans KR";
+    font-weight: 500;
+    font-size: 48px;
+    color: #6B7072;
+}
+.membershipWindow form>input {
+    display: block;
+    width: 458px;
+    height: 69px;
+    border: 2.5px solid #6B7072;
+    border-radius: 40px;
+    font-size: 20px;
+    color: #6B7072;
+    line-height: 100%;
+    text-indent: 18px;
+}
+.membershipWindow form .birth {
+    width: 458px;
+    display: flex;
+    justify-content: space-between;
+}
+.membershipWindow form .birth select {
+    width: 142px;
+    height: 69px;
+    border: 2.5px solid #6B7072;
+    border-radius: 40px;
+    font-size: 20px;
+    color: #6B7072;
+    line-height: 100%;
+    text-indent: 18px;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+}
+.membershipWindow form button {
+    width: 458px;
+    height: 64px;
+    background: #EB9E9D;
+    border: 2px solid #6B7072;
+    border-radius: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 2px 8px rgba(107, 112, 114, 0.5);
+}
+.membershipWindow form button:hover {
+    box-shadow: inset 1px 8px 1px rgba(107, 112, 114, 0.5);
+}
+.membershipWindow form .membershipSelectBox {
+    width: 458px;
+}
+.membershipWindow form .membershipSelectBox p {
+    margin-bottom: 16px;
+    padding-left: 10px;
+    font-size: 16px;
+    font-family: "Noto Sans KR";
+    font-weight: 500;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    cursor: pointer;
+}
+.membershipWindow form .membershipSelectBox p:last-child {
+    margin-bottom: 24px;
+}
+.membershipWindow form .membershipSelectBox p input[type=checkbox] {
+    width: 21px;
+    height: 21px;
+    margin-right: 9px;
+}
+.membershipWindow form .membershipSelectBox p span {
+ color: #4E73F6;
+}
+.membershipWindow form .membershipFinish p {
+    font-size: 30px;
+    color: #6B7072;
+    font-family: "Noto Sans KR";
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 24px;
+}

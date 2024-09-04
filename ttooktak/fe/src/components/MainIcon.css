@@ -1,0 +1,19 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+li {list-style: none;}
+a {text-decoration: none;}
+.icon {
+    width: 240px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+}
+.icon svg path {
+    fill: #6B7072;
+}
+.ProjectName {
+    font-family: 'Roboto';
+    font-size: 44px;
+    font-weight: 600;
+    color: #6B7072;
+    text-decoration: none;
+}
